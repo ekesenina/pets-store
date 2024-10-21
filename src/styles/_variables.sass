@@ -1,0 +1,26 @@
+// @font-face
+//     font-family: 'main'
+//     src: url(../fonts/Montserrat.ttf)
+
+// @font-face
+//     font-family: 'display'
+//     src: url(../fonts/Gropled-Bold.otf)
+
+$background-light-color: #F4FAFF
+$background-dark-color: #39282F
+$background-img-color: #D9EFFF
+$text-color: #1A202C
+$accent-color: #0A488A
+
+::-webkit-scrollbar
+    width: 10px
+
+::-webkit-scrollbar-track
+    background-color: $background-light-color
+
+::-webkit-scrollbar-thumb
+    background-color: $background-dark-color
+    border-radius: 10px
+
+@mixin transition
+    transition: all 0.5s ease-out
