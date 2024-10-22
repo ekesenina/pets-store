@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 
+import ErrorPage from './pages/ErrorPage';
 import Header from "./components/Header";
 import ProductsList from './pages/ProductList';
 
@@ -8,7 +9,8 @@ function App() {
     <>
       <Header/>
       <Routes>
-        <Route path='/products' element={<ProductsList/>}/>
+        <Route path='/products' element={<ProductsList/>} errorElement={<ErrorPage/>}/>
+        <Route path='/favourites' element={<ErrorPage/>} errorElement={<ErrorPage/>}/>
       </Routes>
     </>
   );
